@@ -4,7 +4,7 @@ import MyToastContainer from '../../components/MyToastContainer';
 import { toast } from 'react-toastify';
 // import { Dialog, Transition } from '@headlessui/react';
 
-const forgetPassord = () => {
+const ForgetPassord = () => {
     const [email, setEmail] = useState("");
     const [disable, setDisable] = useState(false);
 
@@ -69,7 +69,7 @@ const forgetPassord = () => {
                     <div className="p-2 md:p-5 lg:px-8 mb-2 text-center">
                         <h3 className="pt-4 mb-3 text-2xl">Forgot Your Password?</h3>
                         <p className="mb-4 text-sm text-gray-700">
-                            We get it, stuff happens. Just enter your email address below and we'll send you a
+                            We get it, stuff happens. Just enter your email address below and we&apos;ll send you a
                             link to reset your password!
                         </p>
                     </div>
@@ -119,4 +119,4 @@ const forgetPassord = () => {
     )
 }
 
-export default forgetPassord
+export default ForgetPassord

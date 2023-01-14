@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import Cookies from 'js-cookie';
 // import Cookies from 'js-cookie';
 
-const login = () => {
+const Login = () => {
     const [loginDetails, setLoginDetails] = useState({ email: "", password: "" });
     const [showSpinner, setShowSpinner] = useState('hidden');
     const [passwordToggle, setPasswordToggle] = useState(true);
@@ -135,7 +135,7 @@ const login = () => {
                         </form>
 
                         <div className="mt-8 text-sm font-display font-semibold text-gray-700 text-center">
-                            Don't have an account ?
+                            Don&apos;t have an account ?
                             <Link href="/user/signup" className="cursor-pointer text-indigo-600 hover:text-indigo-800">
                                 <a className='ml-1 text-indigo-600'>Sign Up</a>
                             </Link>
@@ -148,4 +148,4 @@ const login = () => {
     )
 }
 
-export default login
+export default Login

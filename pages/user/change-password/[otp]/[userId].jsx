@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { useRouter } from 'next/router';
 // import { Dialog, Transition } from '@headlessui/react';
 
-const changePassword = () => {
+const ChangePassword = () => {
     const router = useRouter();
     const [userIdOtp, setUserIdOtp] = useState(router.query);
 
@@ -175,4 +175,4 @@ const changePassword = () => {
     )
 }
 
-export default changePassword
+export default ChangePassword

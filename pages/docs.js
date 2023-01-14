@@ -6,7 +6,7 @@ import Nav from '../components/Nav'
 import { useEffect, useState } from 'react'
 import Cookies from "js-cookie";
 
-const docs = () => {
+const Docs = () => {
     const [userDetails, setUserDetails] = useState(null); // logged in user data
     const [token] = useState(Cookies.get("access_token"));
 
@@ -57,4 +57,4 @@ const docs = () => {
     )
 }
 
-export default docs
+export default Docs

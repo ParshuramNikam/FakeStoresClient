@@ -5,7 +5,7 @@ import MyToastContainer from '../../components/MyToastContainer';
 import { toast } from 'react-toastify';
 import Cookies from 'js-cookie';
 
-const register = () => {
+const Register = () => {
     const [loginDetails, setLoginDetails] = useState({ email: "", password: "", otp: "" });
     const [showSpinner, setShowSpinner] = useState('hidden');
     const [passwordToggle, setPasswordToggle] = useState(true)
@@ -171,4 +171,4 @@ const register = () => {
     )
 }
 
-export default register
+export default Register

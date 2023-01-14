@@ -39,20 +39,20 @@ const ReqResWrapper = ({ apiKey, heading, endpoint, id, note, impNote, reqOption
                 <div className="mb-5 bg-gray-200 rounded-md p-4 overflow-x-scroll md:overflow-x-hidden">
                     <div className="mb-4">
                         <>
-                            fetch("http://localhost:8000/api{endpoint}", {'{'} <br />
+                            fetch(&quot;http://localhost:8000/api{endpoint}&quot;, {'{'} <br />
                             <div className="ml-6">
                                 {/* {reqOptions.method.toUpperCase() !== "GET" && <>
                                     method: '{reqOptions.method.toUpperCase()}', <br />
                                 </>} */}
-                                method: '{reqOptions.method.toUpperCase()}', <br />
+                                method: &ldquo;{reqOptions.method.toUpperCase()}&ldquo;, <br />
                                 {
                                     reqOptions.headers !== null
                                         ? <> headers: {'{'} <br />
-                                            &emsp;&emsp;"Accept": "application/json", <br />
-                                            &emsp;&emsp;"Content-Type": "application/json", <br />
+                                            &emsp;&emsp;&ldquo;Accept&ldquo;: &ldquo;application/json&ldquo;, <br />
+                                            &emsp;&emsp;&ldquo;Content-Type&ldquo;: &ldquo;application/json&ldquo;, <br />
                                             &emsp;&emsp;{
                                                 reqOptions.headers.Authorization && apiKey
-                                                    ? <> "Authorization": "Bearer {apiKey}" <br /> </>
+                                                    ? <> &ldquo;Authorization&ldquo;: &ldquo;Bearer {apiKey}&ldquo; <br /> </>
                                                     /* dummy api key => b3efbc4b-f835-4909-ae67-223e9d96d626 */
                                                     : null
                                             }

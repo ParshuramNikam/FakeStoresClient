@@ -72,15 +72,15 @@ const SimpleFetchCodeSnippet = ({ endpoint, btnType, httpMethod, reqBody, doRequ
 
                     {httpMethod
                         ? <>
-                            fetch('http://localhost:8000/api{endpoint}', {'{'}<br />
+                            fetch(&apos;http://localhost:8000/api{endpoint}&apos;, {'{'}<br />
                             
                             {<div className="ml-6">
-                                method: "{httpMethod}", <br />
+                                method: &quot;{httpMethod}&quot;, <br />
                                 <div className="flex">
-                                    'headers: {'{'} <br />
-                                    &emsp;&emsp;Accept: 'application/json', <br />
-                                    &emsp;&emsp;Content-Type: 'application/json', <br />
-                                    &emsp;&emsp;Authorization: "Bearer d8cadd2d-0ee2-4bc3-8da0-8eef4afb8288",' <br />
+                                    &apos;headers&apos;: {'{'} <br />
+                                    &emsp;&emsp;&apos;Accept&apos;: &apos;application/json&apos;, <br />
+                                    &emsp;&emsp;&apos;Content-Type&apos;: &apos;application/json&apos;, <br />
+                                    &emsp;&emsp;&apos;Authorization&apos;: &apos;Bearer d8cadd2d-0ee2-4bc3-8da0-8eef4afb8288&apos;, <br />
                                     {'}'},
                                 </div>
                                 {reqBody
@@ -92,7 +92,7 @@ const SimpleFetchCodeSnippet = ({ endpoint, btnType, httpMethod, reqBody, doRequ
                             </div>}
                             {'})'} <br />
                         </>
-                        : <> fetch('http://localhost:8000/api{endpoint}') <br /> </>
+                        : <> fetch(&apos;http://localhost:8000/api{endpoint}&apos;) <br /> </>
                     }
                     &emsp;.then(res=&gt; res.json()) <br />
                     &emsp;.then(result=&gt; console.log(result)) <br />
@@ -145,7 +145,7 @@ const SimpleFetchCodeSnippet = ({ endpoint, btnType, httpMethod, reqBody, doRequ
                                                             <div className="ml-5">
                                                                 {<>
                                                                     <JSONPretty id="json-pretty" data={outputArray[0]} />
-                                                                    <span className="text-gray-600">/*...*/</span>
+                                                                    <span className="text-gray-600">&#47;*...*&#47;</span>
                                                                     <JSONPretty id="json-pretty" data={outputArray[outputArray.length - 1]} />
                                                                 </>
                                                                 }
@@ -157,7 +157,7 @@ const SimpleFetchCodeSnippet = ({ endpoint, btnType, httpMethod, reqBody, doRequ
                                                                     ? <JSONPretty id="json-pretty" data={outputArray} />
                                                                     : <>
                                                                         <JSONPretty id="json-pretty" data={outputArray[0]} />
-                                                                        <span className="text-gray-600">/*...*/</span>
+                                                                        <span className="text-gray-600">&#47;*...*&#47;</span>
                                                                         <JSONPretty id="json-pretty" data={outputArray[outputArray.length - 1]} />
                                                                     </>
                                                             }

@@ -31,7 +31,7 @@ const DocsContent = ({ userDetails }) => {
                 <span className="relative top-1.5 mr-2.5">
                     <Image src="/exclamation-mark.png" width="25" height="25" />
                 </span>
-                If you don't provide API Key, then you will get default products only.
+                If you don&apos;t provide API Key, then you will get default products only.
                 With API key can get both your added products and default products.
             </div>
 
@@ -74,7 +74,7 @@ const DocsContent = ({ userDetails }) => {
                 <span className="relative top-1.5 mr-2.5">
                     <Image src="/exclamation-mark.png" width="25" height="25" />
                 </span>
-                Without API key you will get response of only default user's cart.
+                Without API key you will get response of only default user&apos;s cart.
                 If you wants to get your cart along with default carts then you must have to send apiKey
             </div>
 
