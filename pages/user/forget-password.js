@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Link from 'next/link';
 import MyToastContainer from '../../components/MyToastContainer';
 import { toast } from 'react-toastify';
-// import { Dialog, Transition } from '@headlessui/react';
+import Head from 'next/head'
+import PageHead from '../../components/PageHead';
 
 const ForgetPassord = () => {
     const [email, setEmail] = useState("");
@@ -63,6 +64,7 @@ const ForgetPassord = () => {
 
     return (
         <section className='bg-blue-50 min-h-screen w-screen flex justify-center items-center p-2'>
+            <PageHead title={"Forget Password"} />
             <MyToastContainer/>
             <div className="w-full md:max-w-lg bg-white p-5 rounded-lg">
                 <div>

@@ -9,7 +9,7 @@ import Nav from "../components/Nav";
 export default function Home() {
 	return (
 		<div className="bg-white">
-			<PageHead />
+			<PageHead title={""} />
 			<Nav />
 			<main className="overflow-hidden">
 				<div className="container mx-auto px-3">

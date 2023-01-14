@@ -4,6 +4,8 @@ import Link from 'next/link'
 import MyToastContainer from '../../components/MyToastContainer';
 import { toast } from 'react-toastify';
 import Cookies from 'js-cookie';
+import Head from 'next/head'
+import PageHead from '../../components/PageHead';
 
 const Register = () => {
     const [loginDetails, setLoginDetails] = useState({ email: "", password: "", otp: "" });
@@ -79,6 +81,7 @@ const Register = () => {
             {/* <MyToastContainer /> */}
             <div className="antialiased bg-indigo-50 py-3">
                 {/* <Nav /> */}
+                <PageHead title={"Signup"} />
                 <div className="flex items-center h-screen w-full  font-sans ">
                     <div className="w-full bg-white rounded shadow-lg p-8 m-4 md:max-w-lg md:mx-auto">
                         <span className="block w-full uppercase font-bold mb-4 text-indigo-600 text-2xl">Sign Up</span>

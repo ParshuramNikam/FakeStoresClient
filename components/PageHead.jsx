@@ -1,12 +1,12 @@
 import Head from 'next/head'
 
-const PageHead = () => {
+const PageHead = ({title}) => {
     return (
         <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content="Fake store rest api for your ecommerce or shopping website prototype" />
             <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
-            <title>Fake Store API</title>
+            <title>{title ? title + " | Fake Store API" : "Fake Store API" }</title>
 
             {/* <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

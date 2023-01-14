@@ -5,6 +5,8 @@ import DocsContent from '../components/DocsContent'
 import Nav from '../components/Nav'
 import { useEffect, useState } from 'react'
 import Cookies from "js-cookie";
+import Head from 'next/head'
+import PageHead from '../components/PageHead'
 
 const Docs = () => {
     const [userDetails, setUserDetails] = useState(null); // logged in user data
@@ -42,6 +44,7 @@ const Docs = () => {
 
     return (
         <section>
+           <PageHead title={"Docs"} />
             <div className="flex flex-wrap">
                 <SideBar />
                 <div className="w-full lg:w-4/5">

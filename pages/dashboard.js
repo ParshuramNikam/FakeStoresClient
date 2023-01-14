@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import Cookies from "js-cookie";
 import { useRouter } from "next/router";
 import Nav from "../components/Nav";
+import Head from 'next/head'
+import PageHead from "../components/PageHead";
 
 const Dashboard = () => {
 	const [token] = useState(Cookies.get("access_token"));
@@ -151,6 +153,7 @@ const Dashboard = () => {
 
 	return (
 		<section className="min-h-screen bg-white">
+			<PageHead title={"Dashboard"} />
 			<Nav />
 			{token ? (
 				<>

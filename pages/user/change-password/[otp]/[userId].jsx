@@ -3,7 +3,8 @@ import Link from 'next/link';
 import MyToastContainer from '../../../../components/MyToastContainer';
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/router';
-// import { Dialog, Transition } from '@headlessui/react';
+import Head from 'next/head'
+import PageHead from '../../../../components/PageHead';
 
 const ChangePassword = () => {
     const router = useRouter();
@@ -93,6 +94,7 @@ const ChangePassword = () => {
 
     return (
         <section className='bg-blue-50 min-h-screen w-screen flex justify-center items-center p-2'>
+            <PageHead title={"Change Password"} />
             <MyToastContainer />
             <div className="w-full md:max-w-lg bg-white p-3 rounded-lg">
                 <div>
