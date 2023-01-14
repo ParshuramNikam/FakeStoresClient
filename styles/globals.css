@@ -6,7 +6,9 @@
 body {
 	overflow-x: hidden;
 }
-
+html {
+	scroll-behavior: smooth;
+}
 /* -------- Height (100vh - NavBar height) ---------- */
 .min-height-home-screen {
 	min-height: calc(100vh - 4rem);

@@ -1,16 +1,28 @@
-module.exports = {
-  purge: [],
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-   darkMode: false, // or 'media' or 'class'
-   theme: {
-     extend: {},
-   },
-   variants: {
-    accessibility: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-    backgroundColor: ['responsive', 'hover', 'focus', 'active']
+// module.exports = {
+//   purge: [],
+//   content: ["./src/**/*.{html,js,jsx}"],
+//   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+//    darkMode: false, // or 'media' or 'class'
+//    theme: {
+//      extend: {},
+//    },
+//    variants: {
+//     accessibility: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+//     backgroundColor: ['responsive', 'hover', 'focus', 'active']
+//   },
+//    plugins: [],
+//  }
+
+ module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
   },
-   plugins: [],
- }
+  plugins: [],
+}
 
 
 
