@@ -44,15 +44,15 @@ const ReqResWrapper = ({ apiKey, heading, endpoint, id, note, impNote, reqOption
                                 {/* {reqOptions.method.toUpperCase() !== "GET" && <>
                                     method: '{reqOptions.method.toUpperCase()}', <br />
                                 </>} */}
-                                method: &ldquo;{reqOptions.method.toUpperCase()}&ldquo;, <br />
+                                method: &quot;{reqOptions.method.toUpperCase()}&quot;, <br />
                                 {
                                     reqOptions.headers !== null
                                         ? <> headers: {'{'} <br />
-                                            &emsp;&emsp;&ldquo;Accept&ldquo;: &ldquo;application/json&ldquo;, <br />
-                                            &emsp;&emsp;&ldquo;Content-Type&ldquo;: &ldquo;application/json&ldquo;, <br />
+                                            &emsp;&emsp;&quot;Accept&quot;: &quot;application/json&quot;, <br />
+                                            &emsp;&emsp;&quot;Content-Type&quot;: &quot;application/json&quot;, <br />
                                             &emsp;&emsp;{
                                                 reqOptions.headers.Authorization && apiKey
-                                                    ? <> &ldquo;Authorization&ldquo;: &ldquo;Bearer {apiKey}&ldquo; <br /> </>
+                                                    ? <> &quot;Authorization&quot;: &quot;Bearer {apiKey}&quot; <br /> </>
                                                     /* dummy api key => b3efbc4b-f835-4909-ae67-223e9d96d626 */
                                                     : null
                                             }
@@ -113,66 +113,3 @@ const ReqResWrapper = ({ apiKey, heading, endpoint, id, note, impNote, reqOption
 }
 
 export default ReqResWrapper
-
-
-{/* 
-
-doRequest === "false"
-                            ? <div className="mt-5 rounded-md bg-gray-200 p-4 overflow-x-auto">
-                                <code>
-                                    <JSONPretty data={output} />
-                                </code>
-                            </div>
-                            :
-                            outputType === 'obj'
-                                ? (<div className="mt-5 rounded-md bg-gray-200 p-4 overflow-x-auto">
-                                    {
-                                        outputObj !== {}
-                                            ? <JSONPretty id="json-pretty" data={outputObj} />
-                                            : <><span className="text-gray-200 text-lg">Loading...</span>
-                                                {console.log("empty")}
-                                            </>
-                                    }
-                                </div>)
-                                : (<div className="mt-5 rounded-md bg-gray-200 p-4 overflow-x-auto ">
-                                    {
-                                        outputArray === []
-                                            ? (<><span className="text-gray-200 text-lg">Loading...</span>
-                                                {console.log("empty")}
-                                            </>)
-                                            : outputArray.length > 3
-                                                ? (<code>
-                                                    {
-                                                        (endpoint !== "/categories" && !httpMethod)
-                                                            ? <div key={endpoint}> {'['}
-                                                                <div className="ml-5">
-                                                                    {<>
-                                                                        <JSONPretty id="json-pretty" data={outputArray[0]} />
-                                                                        <span className="text-gray-600">/*...*/
-    {/*                                                                          </span >
-                                                                     <JSONPretty id="json-pretty" data={outputArray[outputArray.length - 1]} />
-                                                                    </>
-                                                                    }
-                                                                </div>
-                                                                {']'} </div>
-                                                            : <div className="ml-5">
-                                                                {
-                                                                    endpoint === "/categories"
-                                                                        ? <JSONPretty id="json-pretty" data={outputArray} />
-                                                                        : <>
-                                                                            <JSONPretty id="json-pretty" data={outputArray[0]} />
-                                                                            <span className="text-gray-600">/*...*/
-        {/*                                                                               </span>
-                                                                          <JSONPretty id="json-pretty" data={outputArray[outputArray.length - 1]} />
-                                                                       </>
-                                                                }
-                                                            </div>
-                                                    }
-                                                </code>)
-                                                : <JSONPretty id="json-pretty" data={outputArray} />
-                                    }
-                                </div>)
-
-                                */}
-    }
-}
