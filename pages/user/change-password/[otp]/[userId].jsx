@@ -56,7 +56,7 @@ const ChangePassword = () => {
         }
 
         // console.log(newPassword.trim().toLowerCase());
-        fetch(`http://localhost:8000/api/auth/change-password/${userIdOtp.userId}/${userIdOtp.otp}`, {
+        fetch(`https://fakestoresapi-server.onrender.com/api/auth/change-password/${userIdOtp.userId}/${userIdOtp.otp}`, {
             credentials: 'include',
             method: "POST", // added this part
             headers: {

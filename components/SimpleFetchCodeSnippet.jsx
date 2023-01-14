@@ -20,7 +20,7 @@ const SimpleFetchCodeSnippet = ({ endpoint, btnType, httpMethod, reqBody, doRequ
 
     const apiCall = () => {
         try {
-            return fetch(`http://localhost:8000/api${endpoint}`, {
+            return fetch(`https://fakestoresapi-server.onrender.com/api${endpoint}`, {
                 method: httpMethod,
                 headers: {
                     'Accept': 'application/json',
@@ -72,7 +72,7 @@ const SimpleFetchCodeSnippet = ({ endpoint, btnType, httpMethod, reqBody, doRequ
 
                     {httpMethod
                         ? <>
-                            fetch(&apos;http://localhost:8000/api{endpoint}&apos;, {'{'}<br />
+                            fetch(&apos;https://fakestoresapi-server.onrender.com/api{endpoint}&apos;, {'{'}<br />
                             
                             {<div className="ml-6">
                                 method: &quot;{httpMethod}&quot;, <br />
@@ -92,7 +92,7 @@ const SimpleFetchCodeSnippet = ({ endpoint, btnType, httpMethod, reqBody, doRequ
                             </div>}
                             {'})'} <br />
                         </>
-                        : <> fetch(&apos;http://localhost:8000/api{endpoint}&apos;) <br /> </>
+                        : <> fetch(&apos;https://fakestoresapi-server.onrender.com/api{endpoint}&apos;) <br /> </>
                     }
                     &emsp;.then(res=&gt; res.json()) <br />
                     &emsp;.then(result=&gt; console.log(result)) <br />

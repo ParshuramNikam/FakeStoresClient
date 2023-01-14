@@ -1,2 +1,2 @@
-const serverURL = "http://localhost:8000";
+const serverURL = "https://fakestoresapi-server.onrender.com";
 export default serverURL;

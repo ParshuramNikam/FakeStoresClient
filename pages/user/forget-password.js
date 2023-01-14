@@ -37,7 +37,7 @@ const ForgetPassord = () => {
         }
         // setDisable('HHHHHH')
         console.log(email.trim().toLowerCase());
-        fetch(`http://localhost:8000/api/auth/forget-password?email=${email.trim().toLowerCase()}`, {
+        fetch(`https://fakestoresapi-server.onrender.com/api/auth/forget-password?email=${email.trim().toLowerCase()}`, {
             credentials: 'include',
             method: "GET", // added this part
             headers: {

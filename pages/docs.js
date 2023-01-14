@@ -11,7 +11,7 @@ const Docs = () => {
     const [token] = useState(Cookies.get("access_token"));
 
     const getUserDetails = async () => {
-        await fetch('http://localhost:8000/api/auth/protected', {
+        await fetch('https://fakestoresapi-server.onrender.com/api/auth/protected', {
             // credentials: "include",
             method: "POST",
             body: JSON.stringify({

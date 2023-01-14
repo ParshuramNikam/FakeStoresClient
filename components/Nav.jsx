@@ -43,7 +43,7 @@ function Nav() {
     const logoutHandler = async () => {
         setDisable(true);
 
-        await fetch('http://localhost:8000/api/auth/logout',
+        await fetch('https://fakestoresapi-server.onrender.com/api/auth/logout',
             {
                 method: "DELETE",
                 body: JSON.stringify({
