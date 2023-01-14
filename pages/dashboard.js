@@ -29,7 +29,7 @@ const Dashboard = () => {
 	}
 
 	const getUserDetails = async () => {
-		await fetch('https://fakestoresapi-server.onrender.com/api/auth/protected', {
+		await fetch('https://fakestores.onrender.com/api/auth/protected', {
 			// credentials: "include",
 			method: "POST",
 			body: JSON.stringify({
@@ -53,7 +53,7 @@ const Dashboard = () => {
 
 	const getCartDetails = async () => {
 		console.log(token);
-		await fetch(`https://fakestoresapi-server.onrender.com/api/carts/by/cookie?accessToken=` + Cookies.get('access_token'), {
+		await fetch(`https://fakestores.onrender.com/api/carts/by/cookie?accessToken=` + Cookies.get('access_token'), {
 			method: "GET",
 			// credentials: "include"
 		}).then((res) => res.json())
@@ -68,7 +68,7 @@ const Dashboard = () => {
 
 	const getUserAddedProducts = async () => {
 		console.log(token);
-		await fetch('https://fakestoresapi-server.onrender.com/api/products/by/cookie?accessToken=' + Cookies.get('access_token'), {
+		await fetch('https://fakestores.onrender.com/api/products/by/cookie?accessToken=' + Cookies.get('access_token'), {
 			method: "GET",
 			// credentials: "include"
 		}).then((res) => res.json())

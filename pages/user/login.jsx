@@ -38,7 +38,7 @@ const Login = () => {
         if (loginDetails.email.length > 0 && loginDetails.password.length > 0) {
             setShowSpinner('inline');
             setDisableLogin(true);
-            await fetch("https://fakestoresapi-server.onrender.com/api/auth/login",
+            await fetch("https://fakestores.onrender.com/api/auth/login",
                 {
                     method: "POST",
                     body: JSON.stringify({

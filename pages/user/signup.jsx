@@ -40,7 +40,7 @@ const Register = () => {
 
             setShowSpinner('inline');
             setDisableSignup(true);
-            await fetch("https://fakestoresapi-server.onrender.com/api/auth/signup",
+            await fetch("https://fakestores.onrender.com/api/auth/signup",
                 {
                     method: "POST",
                     body: JSON.stringify({

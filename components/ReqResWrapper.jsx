@@ -39,7 +39,7 @@ const ReqResWrapper = ({ apiKey, heading, endpoint, id, note, impNote, reqOption
                 <div className="mb-5 bg-gray-200 rounded-md p-4 overflow-x-scroll md:overflow-x-hidden">
                     <div className="mb-4">
                         <>
-                            fetch(&quot;https://fakestoresapi-server.onrender.com/api{endpoint}&quot;, {'{'} <br />
+                            fetch(&quot;https://fakestores.onrender.com/api{endpoint}&quot;, {'{'} <br />
                             <div className="ml-6">
                                 {/* {reqOptions.method.toUpperCase() !== "GET" && <>
                                     method: '{reqOptions.method.toUpperCase()}', <br />
